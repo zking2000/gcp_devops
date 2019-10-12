@@ -3,8 +3,8 @@ steps:
   args: ['clone','https://github.com/zking2000/gcp_devops.git']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/my-project/my-image', '.']
+  args: ['build', '-t', 'gcr.io/pm-instance/my-image', '.']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/my-project/my-image']
+  args: ['push', 'gcr.io/pm-instance/my-image']
 
